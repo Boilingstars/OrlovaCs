@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.tmp
+runs/Cs_*/
+runs/full_100.log
+runs/cs_driver.lock
+vendors/xtb-*/
+Cs_SUMMARY.csv
+Cs_hydration_results.zip
