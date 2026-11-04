@@ -1,0 +1,5 @@
+n,T_K,n_unique_shell_groups,radius_A_weighted_E,cos_x_weighted_E,water_cn_weighted_E,Emin_hartree,method
+4,300.0,2,3.619886029136362,0.9999999999999999,3.9518913907448043,-20.310085494092,"E-only, one representative per CoCoS group; exploratory, not G(T)"
+5,300.0,2,3.718909963141005,0.9995298625855659,4.9,-25.406230015919,"E-only, one representative per CoCoS group; exploratory, not G(T)"
+6,300.0,2,3.837196996598501,0.9990000000000001,5.9,-30.500724612517,"E-only, one representative per CoCoS group; exploratory, not G(T)"
+7,300.0,4,3.943663947144141,0.9981137911906975,6.900000000000001,-35.593792609185,"E-only, one representative per CoCoS group; exploratory, not G(T)"

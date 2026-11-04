@@ -14,17 +14,17 @@
 
 | n | GWH | Свободная + tight | Hessian | CoCoS | MDAtom | Полная оболочка | Итог |
 |---|---|---|---|---|---|---|---|
-| 4 | DONE 100/100 | DONE 100/100 | DONE 3 | DONE 2 групп | DONE 3 | DONE 2 | PENDING |
-| 5 | DONE 100/100 | DONE 100/100 | DONE 25 | DONE 3 групп | DONE 25 | DONE 2 | PENDING |
-| 6 | DONE 100/100 | DONE 100/100 | DONE 10 | DONE 3 групп | DONE 10 | DONE 2 | PENDING |
-| 7 | DONE 100/100 | DONE 100/100 | DONE 36 | DONE 7 групп | DONE 36 | DONE 4 | PENDING |
-| 8 | DONE 100/100 | DONE 100/100 | DONE 26 | DONE 9 групп | DONE 26 | DONE 0 | PENDING |
-| 9 | DONE 100/100 | DONE 100/100 | DONE 37 | DONE 34 групп | DONE 37 | DONE 0 | PENDING |
-| 10 | DONE 100/100 | DONE 100/100 | DONE 39 | DONE 39 групп | DONE 39 | DONE 0 | PENDING |
-| 11 | DONE 100/100 | DONE 100/100 | DONE 58 | DONE 58 групп | DONE 58 | DONE 0 | PENDING |
-| 12 | DONE 100/100 | DONE 100/100 | DONE 49 | DONE 49 групп | DONE 49 | DONE 0 | PENDING |
-| 13 | DONE 100/100 | DONE 100/100 | DONE 42 | DONE 42 групп | DONE 42 | DONE 0 | PENDING |
-| 14 | DONE 100/100 | DONE 100/100 | DONE | PENDING | PENDING | PENDING | PENDING |
+| 4 | DONE 100/100 | DONE 100/100 | DONE 3 | DONE 2 групп | DONE 3 | DONE 2 | DONE |
+| 5 | DONE 100/100 | DONE 100/100 | DONE 25 | DONE 3 групп | DONE 25 | DONE 2 | DONE |
+| 6 | DONE 100/100 | DONE 100/100 | DONE 10 | DONE 3 групп | DONE 10 | DONE 2 | DONE |
+| 7 | DONE 100/100 | DONE 100/100 | DONE 36 | DONE 7 групп | DONE 36 | DONE 4 | DONE |
+| 8 | DONE 100/100 | DONE 100/100 | DONE 26 | DONE 9 групп | DONE 26 | DONE 0 | DONE |
+| 9 | DONE 100/100 | DONE 100/100 | DONE 37 | DONE 34 групп | DONE 37 | DONE 0 | DONE |
+| 10 | DONE 100/100 | DONE 100/100 | DONE 39 | DONE 39 групп | DONE 39 | DONE 0 | DONE |
+| 11 | DONE 100/100 | DONE 100/100 | DONE 58 | DONE 58 групп | DONE 58 | DONE 0 | DONE |
+| 12 | DONE 100/100 | DONE 100/100 | DONE 49 | DONE 49 групп | DONE 49 | DONE 0 | DONE |
+| 13 | DONE 100/100 | DONE 100/100 | DONE 42 | DONE 42 групп | DONE 42 | DONE 0 | DONE |
+| 14 | DONE 100/100 | DONE 100/100 | DONE 60 | DONE 60 групп | DONE 60 | DONE 0 | DONE |
 
 ## 3. Хронология экспериментов
 
@@ -323,3 +323,21 @@ MDAtom (--DoNotUseRounding, scale = 1.0, порог n−КЧ ≤ 0.15; #water и
 
 ### 2026-11-03 23:45:47 +0000: n=14, export
 - **Статус:** DONE. minima=60; excluded=40
+
+### 2026-11-04 02:41. n = 14: CoCoS, MDAtom, оболочка
+
+Подтверждённых структур 60. Уникальных минимумов CoCoS 60; групп 60; CritFreq=125 см⁻¹. Устойчивость к обратному порядку: adjusted Rand 1.0000. Энергия уникальных минимумов -71.267991048033…-71.254199749032 Eh, размах внутри n = 0.013791 Eh.
+
+MDAtom (--DoNotUseRounding, scale = 1.0, порог n−КЧ ≤ 0.15; #water из .res): гистограмма КЧ {'5.0': 1, '5.1': 2, '5.2': 3, '5.4': 3, '5.5': 4, '5.6': 1, '5.7': 2, '5.8': 3, '5.9': 1, '6.0': 1, '6.1': 1, '6.2': 2, '6.3': 3, '6.4': 2, '6.5': 6, '6.6': 3, '6.7': 2, '6.8': 5, '6.9': 7, '7.0': 1, '7.1': 1, '7.2': 2, '7.3': 2, '7.9': 1, '8.6': 1}. Структур с КЧ = n: 0. Представителей групп с КЧ = n: 0; пограничных структур для геометрической проверки: 0. Группы без такого члена сохранены в уникальных минимумах и в `selection_audit.csv`.
+
+Геометрическая диагностика, не КЧ MDAtom: структур, у которых все 14 контактов Cs–O ≤ 4,0 Å: 0. Средний Cs–O по проверенным структурам 4.12402 Å. Файлы: `runs/Cs_14/full_100/cocos`, `mdatom`, `shell`, `unique_minima`, `final`.
+
+### 2026-11-04 02:41:24 +0000: n=14, characterize
+- **Статус:** DONE. CoCoS=60; CN=n groups=0
+
+## Итог
+Серия n=4–14 завершена; реальные сводки в `Cs_SUMMARY.csv` и `MDAtom_water.xlsx`.
+
+### Разбор после SERIES_DONE (04.11.2026)
+
+Научный анализ записан в `ANALYSIS.md` (не дублирует автосводку `README_RESULTS.md`). Кратко по проверенным числам: 1100/1100 GWH; 385 частотных минимумов; полная оболочка по порогу 0,15 только при n=4–7; n=8 — все Cs–O ≤ 4,0 Å, но КЧ 7,4–7,8; n≥9 — поверхностный Cs⁺, КЧ насыщается ~5–7. Поиск для n≥9 не насыщен. xTB-stdout (`opt.log`, `xtbopt.log`, `hess.log`, `qc_tmp.log`) после разбора сжат gzip; Hessian `g98.out`, XYZ/CSV/JSON не трогались.
