@@ -1,8 +1,10 @@
 __pycache__/
 *.pyc
 *.tmp
+.venv/
 runs/Cs_*/
 runs/full_100.log
+runs/full_100.console.log
 runs/cs_driver.lock
 vendors/xtb-*/
 Cs_SUMMARY.csv
